@@ -1,0 +1,7 @@
+<div class="shortened-url" *ngIf="allUrls.length else elseBlock">
+  <a *ngFor="let url of allUrls" href="{{url.originalUrl}}" class="links">{{url.shortenedUrl}}</a>
+</div>
+
+<ng-template #elseBlock>
+  No History to Show!
+</ng-template>

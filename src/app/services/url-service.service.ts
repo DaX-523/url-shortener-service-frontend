@@ -19,6 +19,10 @@ export class UrlServiceService {
     return this.http.get(`${BASE_URL}/shorturl/${urlId}`)
   }
 
+  getAllUrls() {
+    return this.http.get(`${BASE_URL}`)
+  }
+
   postUrl(body: Body) {
 
     return this.http.post(`${BASE_URL}/shorturl`, body)

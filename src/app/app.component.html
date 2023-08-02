@@ -1,5 +1,4 @@
-<h1>{{title}}</h1>
-
-<router-outlet>
-  <app-dashboard></app-dashboard>
-</router-outlet>
+<div class="router-container">
+  <h1 class="heading" [class.up]="isHomeRoute">{{title}}</h1>
+  <router-outlet></router-outlet>
+</div>
